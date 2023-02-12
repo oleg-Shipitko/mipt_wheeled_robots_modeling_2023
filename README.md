@@ -36,4 +36,4 @@ Telegram: @alx_rtnkv -->
 
 
 ### Проект по курсу
-Требования к проекту по курсу и идеи тем для проекта описаны в [Course_project.pdf](https://github.com/oleg-Shipitko/mipt_wheeled_robots_modeling_2023/blob/master/project%20description%20and%20topics.pdf).
+Требования к проекту по курсу и идеи тем для проекта описаны в [Course_project.pdf](https://github.com/oleg-Shipitko/mipt_wheeled_robots_modeling_2023/blob/master/Course_project.pdf).
