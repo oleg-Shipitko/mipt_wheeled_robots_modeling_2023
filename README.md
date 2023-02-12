@@ -19,7 +19,7 @@ Telegram: @alx_rtnkv -->
 ## Материалы курса
 
 ### Видео лекций и семинаров прошлых лет
-[YouTube-канал](https://www.youtube.com/playlist?list=PL2PmRem6srUnF9TeEiEj-dnNr238c2paD)
+[YouTube-канал](https://www.youtube.com/@olegshipitko1518/featured)
 
 ### Материалы
 | Неделя | Тема занятия | Слайды |
