@@ -26,8 +26,8 @@ Telegram: @alx_rtnkv -->
 | --- | --- | --- |
 |01| Вводная лекция. Сенсоры мобильных роботов | [Слайды](https://github.com/oleg-Shipitko/mipt_wheeled_robots_modeling_2023/blob/main/slides/Lecture%201.%20Course%20organization%20and%20robotics%20field%20overview.pdf) |
 |02| Алгоритмы локализации | [Слайды](https://github.com/oleg-Shipitko/mipt_wheeled_robots_modeling_2023/blob/main/slides/Lecture%202.%20Localization.pdf) |
-<!-- |03| Кинематика. Вероятностные модели движения | [Слайды](https://github.com/oleg-Shipitko/mipt_wheeled_robots_modeling_2023/blob/main/slides/Lecture%203.%20Kinematics.%20Probabilistic%20motion%20models.pdf) |
-|04| Вероятностные модели наблюдения | [Слайды](https://github.com/oleg-Shipitko/mipt_wheeled_robots_modeling_2023/blob/main/slides/Lecture%204.%20Probabilistic%20measurement%20models.pdf) |
+|03| Кинематика. Вероятностные модели движения | [Слайды](https://github.com/oleg-Shipitko/mipt_wheeled_robots_modeling_2023/blob/main/slides/Lecture%203.%20Kinematics.%20Probabilistic%20motion%20models.pdf) |
+<!-- |04| Вероятностные модели наблюдения | [Слайды](https://github.com/oleg-Shipitko/mipt_wheeled_robots_modeling_2023/blob/main/slides/Lecture%204.%20Probabilistic%20measurement%20models.pdf) |
 |05| Картирование | [Слайды](https://github.com/oleg-Shipitko/mipt_wheeled_robots_modeling_2023/blob/main/slides/Lecture%205.%20Mapping.pdf) |
 |06| Планирование пути | [Слайды](https://github.com/oleg-Shipitko/mipt_wheeled_robots_modeling_2023/blob/main/slides/Lecture%206.%20Path%20planning.pdf) |
 |07| Алгоритмы управления | [Слайды](https://github.com/oleg-Shipitko/mipt_wheeled_robots_modeling_2023/blob/main/slides/Lecture%207.%20Control.pdf) |
