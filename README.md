@@ -12,9 +12,9 @@
 Шипитько Олег 
 Telegram: @oleg_shipitko
 
-<!-- ### Семинарист
-Ратников Алексей
-Telegram: @alx_rtnkv -->
+### Семинарист
+Жердев Николай
+Telegram: @nickzherdev
 
 ## Материалы курса
 
