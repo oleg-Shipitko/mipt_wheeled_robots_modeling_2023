@@ -21,45 +21,48 @@ def getData(message):
 		return ""
 
 async def handleTelemetry(websocket, msgJson):
-	cte = msgJson[1]["cte"]
-	speed = msgJson[1]["speed"]
-	angle = msgJson[1]["steering_angle"]
+    cte = float(msgJson[1]["cte"])
+    speed = float(msgJson[1]["speed"])
+    angle = float(msgJson[1]["steering_angle"])
 
-	print("CTE: ", cte, ", speed: ", speed, ", angle: ", angle)
+    print("CTE: ", cte, ", speed: ", speed, ", angle: ", angle)
 
-	# TODO: Calculate steering value here, remember the steering value is
-	# [-1, 1].
-	# NOTE: Feel free to play around with the throttle and speed.
-	# Maybe use another PID controller to control the speed!
+    # TODO: Update the PID controller with the current error
+    # 
 
-	response = {}
-	
-	response["steering_angle"] = steer_value
+    # TODO: Calculate steering value here, remember the steering value is [-1, 1].
+    #
+    #
+    
+    response = {}
 
-	# TODO: Play around with throttle value
-	response["throttle"] = 0.3;
+    response["steering_angle"] = steer_value
 
-	msg = "42[\"steer\"," + json.dumps(response) + "]"
+    # TODO: Play around with throttle value
+    response["throttle"] = 0.3
 
-	await websocket.send(msg)
+    msg = "42[\"steer\"," + json.dumps(response) + "]"
 
+    await websocket.send(msg)
 
 async def echo(websocket, path):
-	async for message in websocket:
-		if len(message) < 3 \
-			or message[0] != '4' \
-			or message[1] != '2':
-			return
+    try:
+        while True:
+            message = await websocket.recv()
+            if len(message) < 3 or message[0] != '4' or message[1] != '2':
+                return
 
-		s = getData(message);
-		msgJson = json.loads(s)
+            s = getData(message)
+            msgJson = json.loads(s)
 
-		event = msgJson[0]
-		if event == "telemetry":
-			await handleTelemetry(websocket, msgJson)
-		else:
-			msg = "42[\"manual\",{}]"
-			await websocket.send(msg)
+            event = msgJson[0]
+            if event == "telemetry":
+                await handleTelemetry(websocket, msgJson)
+            else:
+                msg = "42[\"manual\",{}]"
+                await websocket.send(msg)
+    except websockets.exceptions.ConnectionClosed:
+        print("Connection with client closed")
 
 
 def main():
